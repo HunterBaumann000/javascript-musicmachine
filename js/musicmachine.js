@@ -63,6 +63,22 @@ $(document).ready(function () {
     $("#recordButton").click(toggleRecording);
     $("#clearButton").click(clearRecording);
 
+    //--------------------------------
+
+    var songOne = ["C,5", "D,5", "E,5", "C,5", "D,5", "E,5", "D,5", "E,5", "D,5", "C,5"]
+    var songTwo = ["F,3", "G,3", "A,3", "E,3", "F,3", "D,3", "E,3"]
+
+    $("#songOneButton").click(
+        function() {
+            playRecording(songOne)
+    });
+
+    $("#songTwoButton").click(
+        function() {
+            playRecording(songTwo)
+        });
+
+   //------------------------------------
 
     function clearRecording() {
         // create a new, empty array
